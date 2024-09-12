@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3d7100509d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vendas de produtos pelo stripe</title>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="" class="logo">Ecommerce</a>
+
+            <i class="fa-solid fa-cart-shopping" id="cart-icon" data-quantity="0"></i>
+
+            <div class="cart">
+                <h2 class="cart-title">Carrinho</h2>
+
+                <div class="cart-content">
+                </div>
+
+                <div class="total">
+                    <div class="total-title">Total</div>
+
+                    <div class="total-price">R$0</div>
+                </div>
+
+                <button type="button" class="btn-buy">Pay now</button>
+
+                <i class="fa-solid fa-xmark" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <!--   add produtos   -->
+       <section class="shop container">
+        <h2 class="section-title">Nossos Produtos</h2>
+<!-- shop content-->
+        <div class="shop-content">
+            <!--Box 1-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXUNx4o3lR8UB5qGFT8epcAWQ1pZBloG6dlm8j0ZxVzg565VLpInAAId8_9fkl5S7strAqHkmd1YeEd7-8L-39ioiVex9K8J1ru0ezZPV13zcVhsVzrlcCdGp2hLktkOCPAcSuZnUWoWmdn5KHmQwueJHcJCFU0UcJrF3L8nNHJcVFJK1KAIGmW2zdC24/s320/combo%20p.jpg" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Combo p</h2>
+                <span class="price">R$23.00</span>
+                <i class="fa-solid fa-bag-shopping add-cart"></i>
+            </div>
+             <!--Box 2-->
+             <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzKxxwx_I_HqOCzdR3jCZrkqJ6QIOFhyphenhyphenQ8Jcii_xJi_31O0QwrHuaMqqNQ0gySEHxFThMICHLTy76ityUhvXx2Jv6jcZoGxEfBnyCKNn3Pon54db0A42mu0AS7i9eFdpTOEeyYcw-TvgIWXCuyfBFziBJh71ufZfX1pKpEHA6zjszjDWCFm1qtq5YjqGs/s320/combocasal%20extra.webp" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Combo Casal Extra!</h2>
+                <span class="price">R$52.00</span>
+                <i class="fa-solid fa-bag-shopping add-cart"></i>
+            </div> 
+            <!--Box 3-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilLfg7MKB-4ozzB9e1wsdK7nYhcdsR1IqQMQk6NN9mbH-qWenZRrZV6bo9mrQJwzypZj5Pqz3Xzkd4fzgTPoqJV6RSRhu1kJPyp_U7iYzAZ6e4i8IGp2bQs96n1HiDNv-yql4deRl3yUHcJVojplUfkvR1RiQG6BahqwU9h_vz4sBXQ1uUNKmOHEXNEEc/s320/combocasal%20g.webp" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Combo Casal G</h2>
+                <span class="price">R$46.50</span>
+                <i class="fa-solid fa-bag-shopping add-cart"></i>
+            </div> 
+            <!--Box 4-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuMY3YnHefdVNBysxQJwjlsCvSVFlUCYQ2XDY3kfCijZPL0t1B71OloiE48FEBhFJ9l0cGN_399-y63-7QxWCgyWEbtiBqWsFaagNXFbN9akDQwVx-PRWRJdBos6KPEArq3LzLxlEe1f76_O94Kzl1khhDN9N2kdapvwpK8MA_9KqELAhmE11zWjHOgXk/s320/lanchebaconacebolado.webp" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Bacon Acebolado</h2>
+                <span class="price">R$33.50</span>
+                <i class="fa-solid fa-bag-shopping add-cart"></i>
+            </div> 
+            <!--Box 5-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiajFaVkRiwzFJcPhvGYWNhvcNEbkgRfhni9viLu9OcFOBGTeQnL_7gttCS_L2hJlcedP5ieSGbO2krV23IcWVRje-sumoc0f7D3NI9w-fX-nLK1NVxnorBKurcNwGFcP2NAvIcyYYyHb02ffs0rn-wIcAeyzZDeUIWs53pISNBv6M_rydWzTVOV1tbt0w/s320/lancheburguer.jpg"
+                class="product-img">
+                <h2 class="product-title">Hamburgão</h2>
+                <span class="price">R$22.00</span>
+                <i class="fa-solid fa-bag-shopping add-cart"></i>
+            </div>
+             <!--Box 6-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8DdpciMdbgIEU0aaCixLef14i69xFd5fU6zJX7QOqtShPPheJjFQ71dHD9mGLIR7yWcsaEivVbAq-OW5miofB4wXg7d9reh_3_kJjiwTla8wZ3e0TeJWA4pfnXCbm8Rov1zPlg80ZgAwo_MMuM9LTlDeB3lMgqGCzTdaNN18-tcq9SEUttv-P7cIIb10/s320/lanchemonstrao.jpg" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Monstrão</h2>
+                <span class="price">R$47.20</span>
+                <i class="fa-solid fa-bag-shopping add-cart"></i>
+            </div> 
+            <!--Box 7-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBOiGTr0RL6n3LvXD41Ev8KEoJQinT60VVdDzNhb5qINMCtXaJmFCSwF6R1l9xAxCmaXUUF7MmuzA5o4QmXX0cY9fAA-gpOnt217N0j6LFCWIiJ4XugpAxJkaxCsC2XlZruvqG0PqkDfEDvOWGCnxWIXqp7BR7xY5Fr_j4Bm54myOIYOdGD-_GqVNlOyE/s320/lanchequarteirao.jpg" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Quarteirão</h2>
+                <span class="price">R$44.10</span>
+                <i class="fa-solid fa-bag-shopping add-cart"></i>
+            </div>
+             <!--Box 8-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrmZ7IFin9tNknUx1DUSN6rd1mSq08rUfMAstILnkR7qxDCmR_zzUQUH_FXarwIZvBFS67VpwhxWMCgJXny-6vqBblkoRdCTCJBcdR-Yn1ydyR4at5GQJSoMZH8m5Z9yKa7AAF5EICzAhBIrRB3qZzp-MZo_RtEVpJPwSQuODe9aGqlKnZuSnrBna1_Os/s320/lanchetradicional.webp"
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Tradicional</h2>
+                <span class="price">R$24.09</span>
+                <i class="fa-solid fa-bag-shopping add-cart"></i>
+            </div>         
+                    
+            
+        </div>
+
+       </section>
+
+       <div class="texto">
+        <h1>Bebidas</h1>
+       </div>
+
+        <!--section bebidas-->
+        <section class="bebidas">
+            <!--box 1-->
+            <div class="product-box">
+                <img src="img/agua mineral.png" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Agua Mineral</h2>
+                <span class="price">R$3.00</span>
+                <i class="fa-solid fa-bag-shopping add-cart"></i>
+            </div>
+              <!--box 2-->
+              <div class="product-box">
+                <img src="img/agua gas.png"
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Agua mineral c/gas</h2>
+                <span class="price">R$3.50</span>
+                <i class="fa-solid fa-bag-shopping add-cart"></i>
+            </div>
+              <!--box 3-->
+              <div class="product-box">
+                <img src="img/cocalata.webp" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Coca lata 355ml</h2>
+                <span class="price">R$5.00</span>
+                <i class="fa-solid fa-bag-shopping add-cart"></i>
+            </div>
+              <!--box 4-->
+              <div class="product-box">
+                <img src="img/coca0.png" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Coca zero 220ml</h2>
+                <span class="price">R$5.00</span>
+                <i class="fa-solid fa-bag-shopping add-cart"></i>
+            </div>
+              <!--box 5-->   
+            </section>
+       
+  
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
